@@ -90,3 +90,35 @@ if __name__ == '__main__':
         assert result == expected, f"Test failed for '{word}': expected {expected}, got {result}"
 
     print("✅ All basic tests passed.")
+
+### TEST CASE FOR WORD TEXT FILE
+def load_words_from_file(filepath):
+    try:
+        with open(filepath, 'r') as file:
+            words = [line.strip() for line in file if line.strip()]
+        return words
+    except FileNotFoundError:
+        print(f"❌ File not found: {filepath}")
+        return []
+if __name__ == '__main__':
+    tst = TernarySearchTree()
+
+    # Path to your file (Windows style)
+    filepath = r"C:\Users\SUDHIR\Downloads\Project Concept of Data Science\search_trees\insert_words.txt"
+
+    # Load and insert words from the file
+    words_from_file = load_words_from_file(filepath)
+    for word in words_from_file:
+        tst.insert(word)
+
+    print(f"✅ Inserted {len(words_from_file)} words into the TST.")
+
+    # Optional: Traverse and print all inserted words
+    print("🌳 Words in TST (via traverse):")
+    print(tst.traverse())
+
+    # Optional: Test search
+    test_words = ["cat", "banana", "tree", "dog"]
+    for word in test_words:
+        found = tst.search(word)
+        print(f"🔍 Search '{word}': {'Found ✅' if found else 'Not found ❌'}")

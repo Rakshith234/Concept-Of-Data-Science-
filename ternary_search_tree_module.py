@@ -67,7 +67,7 @@ class TernarySearchTree:
         self._traverse(node.middle, prefix + node.char, result)
         self._traverse(node.right, prefix, result)
 
-
+# Sample Test cases are inserted
 # Example usage and basic testing
 if __name__ == '__main__':
     tst = TernarySearchTree()

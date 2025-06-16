@@ -1,5 +1,9 @@
 # My DNA Sequence Assembly Project with Ternary Search Trees
 
+Student name : Amudhaanandheswaran Selvaraj, Nanabala Thishya Rakshith
+
+
+
 Welcome to my repository for the "DNA Sequence Assembly" project, developed as part of my Advanced Programming in Python course. This repository showcases my implementation of a Ternary Search Tree (TST) and its application in efficiently managing and assembling DNA sequences. I've focused on creating a robust and performant solution, including a thorough analysis of its time complexity and real-world performance on high-performance computing resources.
 
 ## Project Overview

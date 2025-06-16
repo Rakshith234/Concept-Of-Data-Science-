@@ -1,7 +1,6 @@
-# Concept-Of-Data-Science-
 My Ternary Search Tree (TST) Implementation
 Project Overview
-This project is my Python implementation of a Ternary Search Tree (TST), which is an efficient data structure I built for storing and retrieving strings. I found it particularly useful for applications that require fast string search, insertion, and prefix matching, like dictionary lookups. In the context of my larger work, I designed it to manage DNA segments for sequence assembly.
+This project is my Python implementation of a Ternary Search Tree (TST), which is an efficient data structure I built for storing and retrieving strings. I found it particularly useful for applications that require fast string search, insertion, and prefix matching, like dictionary lookups. In the context of my larger work, I designed it to manage DNA segments for sequence assembly. A significant part of my work also involved analyzing its performance, including generating time complexity graphs and obtaining supercomputing output results.
 
 Key Features
 The TernarySearchTree class that I developed supports the following core operations:
@@ -10,8 +9,11 @@ insert(word): I implemented this to add a string to the tree.
 search(word): I use this method to quickly check if a string exists in the tree.
 __len__(): This returns the total number of unique strings I have stored.
 traverse(): I designed this to retrieve all strings currently in the tree in alphabetical order.
+Performance Analysis & Results
+I extensively analyzed the performance of my Ternary Search Tree implementation. I generated a time complexity graph to visually illustrate its efficiency as the number of inserted words or the length of the words increased. This graph helped me understand how the TST scales with different input sizes. Furthermore, I obtained supercomputing output results from running the TST on high-performance computing resources. These results allowed me to assess its scalability and performance under demanding conditions, particularly when processing very large datasets like corncob_lowercase.txt.
+
 How I Ran My Tests
-I placed all test cases for my Ternary Search Tree implementation within the tst.ipynb Jupyter Notebook. These tests cover basic functionality, how it handles duplicates, edge cases like empty strings, and its performance when working with large datasets.
+I placed all test cases for my Ternary Search Tree implementation within the tst.ipynb Jupyter Notebook. These tests cover basic functionality, handling of duplicates, edge cases like empty strings, and performance with large datasets.
 
 My tests utilize the following data files:
 
@@ -29,8 +31,10 @@ jupyter notebook
 In the Jupyter interface that opens in your browser, click on tst.ipynb.
 Run all cells within the notebook. The output will show the status of each test (✅ Passed or ❌ Failed).
 Files I Included
-ternary_search_tree_module.py: This is the Python script where I defined my TSTNode and TernarySearchTree classes.
-tst.ipynb: This is the Jupyter Notebook containing all my test cases and examples of how to use the TST.
+ternary_search_tree_module.py: This is the Python script where I defined my TSTNode and TernarySearchTree class definitions.
+tst.ipynb: This is the Jupyter Notebook containing all my test cases and examples of how to use the TST. This notebook also contains the code I used to generate the time complexity graph.
 insert_words.txt: My test data for insertion.
 not_insert_words.txt: My test data for searches of non-existent words.
 corncob_lowercase.txt: The large dataset I used for performance testing.
+time_complexity_graph.png: The image file showing the time complexity graph of my TST.
+supercomputing_results.log: The log file containing the output results from my supercomputing runs.
